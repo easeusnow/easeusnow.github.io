@@ -1150,5 +1150,90 @@ footer a{
         width: 100%;
         row-gap: 20px;
     }
+
+    .about-img img{
+        min-width: 0;
+        width: 100%;
+    }
+
+    .about-info{
+        min-width: 0;
+        width: 100%;
+    }
+
+    .about-info .professional-list{
+        flex-direction: column;
+    }
+
+    .about-info .professional-list .list-item{
+        justify-content: start;
+    }
+
+    /*Get in Touch*/
+    .get-in-touch .contact-card{
+        display: grid;
+        width: 100%;
+    }
+
+    .contact-card .title{
+        font-size: 0.8rem;
+        line-height: 50px;
+    }
+
+    /*Our Clients*/
+    .client-swiper .swiper-slide{
+        flex-direction: column;
+    }
+
+    .client-details{
+        text-align: center;
+    }
+
+    /*Contact Details*/
+    .contact .content{
+        flex-direction: column;
+        font-size: 0.9rem;
+    }
+
+    .contact .contact-left{
+        margin-bottom: 40px;
+    }
+
+    .contact-form .second-row{
+        flex-direction: column;
+    }
+
+    .contact-form .second-row input{
+        width: 100%;
+    }
+
+    /*footer8*/
+    footer .footer-container{
+        flex-direction: column;
+    }
+
+    .footer-container .about, .footer-container .info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .footer-container .info ul{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer-conatiner .info ul li{
+        margin: 5px 0;
+    }
+
+    .footer-container .hr{
+        width: 100%;
+        height: 2px;
+        background: rgba(255, 255, 255, 0.1);
+        margin: 10px 0 22px;
+    }
 }
 
