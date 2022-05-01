@@ -95,28 +95,6 @@ window.addEventListener("scroll", () => {
     });
 });
 
-//Website Dar/Light Theme
-const themeBtn = document.querySelector(".theme-btn");
-
-themeBtn.addEventListener("click", () => {
-    document.body.classList.toggle("dark-theme");
-    themeBtn.classList.toggle("sun");
-
-    localStorage.setItem("saved-theme", getCurrentTheme());
-    localStorage.setItem("saved-icon", getCurrentIcon());
-});
-
-const getCurrentTime = () => document.body.classList.contains("dark-theme") ? "dark" : "light";
-const getCurrentIcon = () => themeBtn.body.classList.contains("sun") ? "sun" : "moon";
-
-const savedTheme = localStorage.getItem("saved-theme");
-const savedIcon = localStorage.getItem("saved-icon");
-
-if(savedTheme){
-    document.body.classList[savedTheme === "dark" ? "add" : "remove"]("dark-theme");
-    themeBtn.classList[savedIcon === "sun" ? "add" : "remove"]("sun");
-}
-
 //Responsive Navigation Menu Toggle
 const menuBtn = document.querySelector(".nav-menu-btn");
 const closeBtn = document.querySelector(".nav-close-btn");
@@ -136,6 +114,8 @@ navItems.forEach((navItem) => {
         navigation.classList.remove("active");
     });
 });
+
+
 
 
 
