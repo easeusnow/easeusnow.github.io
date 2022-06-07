@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face{
+    font-family: Olga;
+    src: url(../fonts/Olga.ttf);
+}
 
 :root{
     --first-color: #fff;
@@ -119,8 +123,14 @@ header.sticky .nav-bar{
 
 .nav-bar .logo{
     color: var(--first-color);
+    font-family: Olga;
     font-size:  1.3rem;
     font-weight: 600;
+    letter-spacing: 1.3px;
+}
+
+.nav-bar .logo img{
+    width: 15px;
 }
 
 .nav-items a{
@@ -440,6 +450,14 @@ header.sticky .nav-bar{
     font-size: var(--small-font-size);
 }
 
+.about .container .skills-description{
+    padding-top: 50px;
+}
+
+.about .container .skills-info .experience-card p{
+    color: var(--third-color);
+}
+
 /*Skills Section*/
 
 .skills .container .content{
@@ -477,9 +495,6 @@ header.sticky .nav-bar{
     border-radius: 5px;
 }
 
-.education-all{
-    margin-bottom: 80px;
-}
 
 .edu-list .item{
     background: var(--card-bg-color);
@@ -1174,7 +1189,7 @@ footer a{
     }
 
     /*Home Section*/
-    .home .home-container .info{
+    .home .home-container{
         font-size: 0.85rem;
     }
 
@@ -1241,7 +1256,7 @@ footer a{
         width: 100%;
     }
 
-    /*footer8*/
+    /*footer*/
     footer .footer-container{
         flex-direction: column;
     }
@@ -1268,6 +1283,38 @@ footer a{
         height: 2px;
         background: rgba(255, 255, 255, 0.1);
         margin: 10px 0 22px;
+    }
+}
+
+@media screen and (max-width: 730px){
+    body{
+        margin: 5rem 0 0 0;
+    }
+     
+    .section-title-01{
+        font-size: 3em;
+    }
+
+    .section-title-02{
+        font-size: 2em;
+        transform: translateY(-65px);
+    }
+
+    .home .home-container .info{
+        font-size: 0.8rem;
+    }
+
+    .get-in-touch .contact-card{
+        display: grid;
+    }
+
+    .contact-card .title{
+        font-size: 0.6rem;
+        line-height: 40px;
+    }
+
+    .contact-card .contact-btn .btn{
+        font-size: 0.8rem;
     }
 }
 
