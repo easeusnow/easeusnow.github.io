@@ -240,7 +240,7 @@ navItems.forEach((navItem) => {
 
 //Scroll Reveal Animation
 ScrollReveal({
-    reset: true,
+    //reset: true,
     distance: '60px',
     duration: 2500,
     delay: 100
