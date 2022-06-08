@@ -9,7 +9,18 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('.chat-icon').click(function () {
+                $(this).toggleClass('active');
+                $('.main-chat-box').toggle();
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -18,10 +29,34 @@
         <i class="fas fa-arrow-up"></i>
     </div>
 
+    <!--Call to Action-->
+    <span class="chat-icon"></span>
+    <div class="main-chat-box">
+        <ul class="chatBox">
+            <li>
+                <a href="https://wa.me/917488985952" target="_blank">
+                    <i class="fa fa-whatsapp fa-2x cta" aria-hidden="true"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="tel:7488985952">
+                    <i class="fas fa-phone fa-2x cta"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="mailto:easeusnow@gmail.com">
+                    <i class="fas fa-envelope fa-2x cta"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
     <!--Header-->
     <header>
         <div class="nav-bar">
-            <a href="#" class="logo"><img src="images/logo.png"> EaseUS</a>
+            <a href="#home" class="logo"><img src="images/logo.png"><span class="logoTitle"> EaseUS</span></a>
             <div class="navigation">
                 <div class="nav-items">
                     <div class="nav-close-btn"></div>
@@ -613,7 +648,7 @@
                     <ul class="contact-list">
                         <li>
                             <h3 class="item-title"><i class="fas fa-phone"></i> Phone</h3>
-                            <span>+91 747 985 2780</span>
+                            <span><a href="tel:7488985952">+91 7488985952</a></span>
                         </li>
                         <li>
                             <h3 class="item-title"><i class="fas fa-envelope"></i> Email Address</h3>
