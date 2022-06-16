@@ -161,8 +161,7 @@ header.sticky{
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 20px;
-    transition:  .6s ease; 
+    padding: 0 20px; 
 }
 
 header.sticky .nav-bar{
@@ -460,6 +459,7 @@ header.sticky .nav-bar{
     transition: .3s ease;
 }
 
+/*
 .edu-list .item .year{
     font-size: var(--small-font-size);
     margin-bottom: 5px;
@@ -475,6 +475,7 @@ header.sticky .nav-bar{
     font-size: var(--normal-font-size);
     font-weight: 500;
 }
+*/
 
 .bar{
     background: var(--card-bg-color);
@@ -516,24 +517,76 @@ header.sticky .nav-bar{
 
 }
 
-.bar .html:before{
+.bar .cms:before{
+    width: 90%;
+}
+
+.bar .Programming:before{
     width: 95%;
 }
 
-.bar .css:before{
-    width: 90%;
+.bar .Promotion:before{
+    width: 98%;
 }
 
-.bar .javascript:before{
+.bar .Strategy:before{
+    width: 99%;
+}
+
+.bar .Curation:before{
     width: 85%;
 }
 
-.bar .jquery:before{
-    width: 75%;
+.bar .Management:before{
+    width: 90%;
 }
 
-.bar .php:before{
+.bar .Photoshop:before{
+    width: 95%;
+}
+
+.bar .Illustrator:before{
+    width: 85%;
+}
+
+.bar .Premiere:before{
+    width: 95%;
+}
+
+.bar .After:before{
+    width: 80%;
+}
+
+.bar .Web:before{
     width: 90%;
+}
+
+.bar .WordPress:before{
+    width: 85%;
+}
+
+.bar .Brand:before{
+    width: 98%;
+}
+
+.bar .Marketing:before{
+    width: 90%;
+}
+
+.bar .Email:before{
+    width: 96%;
+}
+
+.bar .Social:before{
+    width: 95%;
+}
+
+.bar .Ad:before{
+    width: 85%;
+}
+
+.bar .Demographics:before{
+    width: 92%;
 }
 
 .experience-card{
@@ -715,6 +768,7 @@ header.sticky .nav-bar{
     background: rgba(0, 0, 0, 0.5);
 }
 
+/*
 .portfolio-list .img-card .info{
     z-index: 777;
     position: absolute;
@@ -739,6 +793,7 @@ header.sticky .nav-bar{
 .portfolio-list .img-card .info span{
     font-size: 1.2em;
 }
+*/
 
 .portfolio-list .img-card img{
     width: 100%;
@@ -789,9 +844,11 @@ header.sticky .nav-bar{
     cursor: pointer;
 }
 
+/*
 .portfolio-model-body h3{
     font-size: 1.5em;
 }
+*/
 
 .portfolio-model-body img{
     width: 100%;
@@ -844,6 +901,29 @@ header.sticky .nav-bar{
 }
 
 /*Our Clients*/
+/*
+.client-logo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.client-logo .logo-img{
+    margin: 0;
+    padding: 0;
+}
+*/
+
+.client-logo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.client-logo .logo-img img{
+    width: 80px;
+}
+
 .our-client .container{
     flex-direction: column;
 }
@@ -1184,6 +1264,20 @@ footer a{
     }
 
     /*Our Clients*/
+    .client-logo{
+        text-align: center;
+    }
+
+    .client-logo .logo-img{
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .client-logo .logo-img img{
+        width: 70px;
+    }
+    
+
     .client-swiper .swiper-slide{
         flex-direction: column;
     }
@@ -1258,6 +1352,19 @@ footer a{
         font-size: 0.8rem;
     }
 
+    .client-logo{
+        text-align: center;
+    }
+
+    .client-logo .logo-img{
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .client-logo .logo-img img{
+        width: 70px;
+    }
+
     .get-in-touch .contact-card{
         display: grid;
     }
@@ -1271,3 +1378,5 @@ footer a{
         font-size: 0.8rem;
     }
 }
+
+
